@@ -1,7 +1,8 @@
-#include "Header.h"
+//#include "API/pch.h"
+#include "Application.h"
 #include <GLFW/glfw3.h>
 
-int RunEngine(void)
+int RunEngine()
 {
 	GLFWwindow* window;
 

@@ -104,12 +104,13 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(ProjectDir)lib\Engine\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\Engine\libs;$(ProjectDir)lib\GLFW\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Engine.lib;glfw3dll.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
       <Command>REM Copy Engine Library Files to the Game .exe directory
-MKDIR "$(ProjectDir)\lib\Engine\libs"
-XCOPY "$(ProjectDir)\lib\Engine\libs" "$(TargetDir)" /e /h /y /s</Command>
+MKDIR "$(ProjectDir)lib\Engine\libs"
+XCOPY "$(ProjectDir)lib\Engine\libs" "$(TargetDir)" /e /h /y /s</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -127,12 +128,13 @@ XCOPY "$(ProjectDir)\lib\Engine\libs" "$(TargetDir)" /e /h /y /s</Command>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(ProjectDir)lib\Engine\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\Engine\libs;$(ProjectDir)lib\GLFW\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Engine.lib;glfw3dll.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
       <Command>REM Copy Engine Library Files to the Game .exe directory
-MKDIR "$(ProjectDir)\lib\Engine\libs"
-XCOPY "$(ProjectDir)\lib\Engine\libs" "$(TargetDir)" /e /h /y /s</Command>
+MKDIR "$(ProjectDir)lib\Engine\libs"
+XCOPY "$(ProjectDir)lib\Engine\libs" "$(TargetDir)" /e /h /y /s</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

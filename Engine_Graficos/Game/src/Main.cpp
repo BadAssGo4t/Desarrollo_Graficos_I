@@ -1,6 +1,6 @@
-//#include "Header.h"
+#include "Application.h"
 
 int main()
 {
-	//return RunEngine();
+	return RunEngine();
 }
