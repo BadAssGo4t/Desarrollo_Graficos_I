@@ -1,6 +1,7 @@
+#include "Header.h"
 #include <GLFW/glfw3.h>
 
-int main(void)
+int RunEngine(void)
 {
 	GLFWwindow* window;
 
