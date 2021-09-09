@@ -114,7 +114,7 @@ COPY "$(TargetDir)$(TargetName).dll" "$(SolutionDir)Game\lib\Engine\libs\$(Targe
 COPY "$(TargetDir)$(TargetName).dll" "$(SolutionDir)Game\lib\Engine\libs\$(TargetName).lib"
 REM Copy Library Header to Game lib
 MKDIR "$(SolutionDir)Game\lib\Engine\include\API"
-COPY "$(ProjectDir)src\Application.h" "$(SolutionDir)Game\lib\Engine\include\Application.h"
+COPY "$(ProjectDir)src\Application.h" "$(SolutionDir)Game\lib\Engine\include\Base.h"
 COPY "$(ProjectDir)src\API\EngineAPI.h" "$(SolutionDir)Game\lib\Engine\include\API\EngineAPI.h"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -146,7 +146,7 @@ COPY "$(TargetDir)$(TargetName).dll" "$(SolutionDir)Game\lib\Engine\libs\$(Targe
 COPY "$(TargetDir)$(TargetName).dll" "$(SolutionDir)Game\lib\Engine\libs\$(TargetName).lib"
 REM Copy Library Header to Game lib
 MKDIR "$(SolutionDir)Game\lib\Engine\include\API"
-COPY "$(ProjectDir)src\Application.h" "$(SolutionDir)Game\lib\Engine\include\Application.h"
+COPY "$(ProjectDir)src\Application.h" "$(SolutionDir)Game\lib\Engine\include\Base.h"
 COPY "$(ProjectDir)src\API\EngineAPI.h" "$(SolutionDir)Game\lib\Engine\include\API\EngineAPI.h"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -188,12 +188,16 @@ COPY "$(ProjectDir)src\API\EngineAPI.h" "$(SolutionDir)Game\lib\Engine\include\A
     <ClInclude Include="src\API\EngineAPI.h" />
     <ClInclude Include="src\API\framework.h" />
     <ClInclude Include="src\API\pch.h" />
-    <ClInclude Include="src\Application.h" />
+    <ClInclude Include="src\BaseClasses\Base.h" />
+    <ClInclude Include="src\BaseClasses\Renderer.h" />
+    <ClInclude Include="src\BaseClasses\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\API\dllmain.cpp" />
     <ClCompile Include="src\API\pch.cpp" />
-    <ClCompile Include="src\Application.cpp" />
+    <ClCompile Include="src\BaseClasses\Base.cpp" />
+    <ClCompile Include="src\BaseClasses\Renderer.cpp" />
+    <ClCompile Include="src\BaseClasses\Window.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
