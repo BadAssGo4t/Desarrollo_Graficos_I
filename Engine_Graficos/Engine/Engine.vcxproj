@@ -96,7 +96,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;ENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(projectdir)lib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -126,7 +126,7 @@ COPY "$(ProjectDir)src\API\EngineAPI.h" "$(SolutionDir)Game\lib\Engine\include\A
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;ENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(projectdir)lib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -191,6 +191,9 @@ COPY "$(ProjectDir)src\API\EngineAPI.h" "$(SolutionDir)Game\lib\Engine\include\A
     <ClInclude Include="src\BaseClasses\Base.h" />
     <ClInclude Include="src\BaseClasses\Renderer.h" />
     <ClInclude Include="src\BaseClasses\Window.h" />
+    <ClInclude Include="src\Entity\2D\Shape.h" />
+    <ClInclude Include="src\Entity\Entity2D.h" />
+    <ClInclude Include="src\Entity\Entity.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\API\dllmain.cpp" />
@@ -198,6 +201,9 @@ COPY "$(ProjectDir)src\API\EngineAPI.h" "$(SolutionDir)Game\lib\Engine\include\A
     <ClCompile Include="src\BaseClasses\Base.cpp" />
     <ClCompile Include="src\BaseClasses\Renderer.cpp" />
     <ClCompile Include="src\BaseClasses\Window.cpp" />
+    <ClCompile Include="src\Entity\2D\Shape.cpp" />
+    <ClCompile Include="src\Entity\Entity.cpp" />
+    <ClCompile Include="src\Entity\Entity2D.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
