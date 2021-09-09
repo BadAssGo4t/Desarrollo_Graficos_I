@@ -383,3 +383,8 @@ MigrationBackup/
 Engine_Graficos/.vs/Engine_Graficos/v16/Browse.VC.db-wal
 
 Engine_Graficos/.vs/Engine_Graficos/v16/Browse.VC.db-shm
+
+
+#DON'T IGNORE DEPENDENCIES
+!lib
+!libs
