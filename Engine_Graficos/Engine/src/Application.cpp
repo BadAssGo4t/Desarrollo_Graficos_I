@@ -3,15 +3,15 @@
 #include <GLFW/glfw3.h>
 
 // Shader Buffer 
-static unsigned int compileShader(const std::string& source, unsigned int type)
+static unsigned int compileShader(unsigned int type, const std::string& source)
 {
 	unsigned int id = glCreateShader(type);
-	const char* src = source.c_str();
+	const char* src = source.c_str(); 
 	glShaderSource(id, 1, &src, nullptr);
 	glCompileShader(id);
 
 	// Error Handling
-	int result
+	int result;
 	glGetShaderiv (id, GL_COMPILE_STATUS, &result);
 	if (result == false)
 	{
@@ -19,7 +19,7 @@ static unsigned int compileShader(const std::string& source, unsigned int type)
 		glGetShaderiv (id, GL_INFO_LOG_LENGTH, &lenght);
 		char* message = (char*)alloca(lengt * sozeof (char));
 		glGetShaderInfoLog(id, length, &length, message);
-		std::cout << "failed to compile " << (type== GL_VERTEX_SHADER ? "vertex" : "fragment");
+		std::cout << "failed to compile " << (type == GL_VERTEX_SHADER ? "vertex" : "fragment");
 		std::endl;
 		std::cout << message << etd::endl;
 	}
