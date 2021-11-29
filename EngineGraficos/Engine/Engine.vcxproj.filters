@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Base Classes">
+      <UniqueIdentifier>{5c6ffaa0-8e38-4a5e-87f1-e9cd4fede08c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity">
+      <UniqueIdentifier>{2d7191cd-fbbe-479b-aeb3-f8ec5d69ef0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity\Entity2D">
+      <UniqueIdentifier>{8d5a0301-ce66-4815-8af5-e8a3dbf40334}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity\Entity2D\TileMap">
+      <UniqueIdentifier>{6fd10a1e-a617-44c1-b767-6eb7f3ec0466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity\Entity2D\Shape">
+      <UniqueIdentifier>{c3bd5d2f-00a8-4d68-b80c-ad2e5f51beee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity\Entity2D\Sprite">
+      <UniqueIdentifier>{78e5f933-d296-4b5c-ab61-88c990610073}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2D Utils">
+      <UniqueIdentifier>{abf13074-98c5-4859-a721-fd8189d6071c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2D Utils\Material">
+      <UniqueIdentifier>{f8da88db-b91b-4595-a18c-3358b7559817}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2D Utils\Animation">
+      <UniqueIdentifier>{f4a3c7e5-b996-45fb-9f02-8d8bd8bce19a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2D Utils\TextureImporter">
+      <UniqueIdentifier>{36a1c0f8-0b18-4fdb-a544-942982d0d6e2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BaseClasses\Engine.cpp">
+      <Filter>Source Files\Base Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BaseClasses\Input.cpp">
+      <Filter>Source Files\Base Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BaseClasses\Window.cpp">
+      <Filter>Source Files\Base Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BaseClasses\CollisionManager.cpp">
+      <Filter>Source Files\Base Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BaseClasses\Renderer.cpp">
+      <Filter>Source Files\Base Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entity\Entity.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entity\Entity2D\Entity2D.cpp">
+      <Filter>Source Files\Entity\Entity2D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entity\Entity2D\TileMap\TileMap.cpp">
+      <Filter>Source Files\Entity\Entity2D\TileMap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entity\Entity2D\Shape\Shape.cpp">
+      <Filter>Source Files\Entity\Entity2D\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entity\Entity2D\Sprite\Sprite.cpp">
+      <Filter>Source Files\Entity\Entity2D\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="src\2DUtils\Material\Material.cpp">
+      <Filter>Source Files\2D Utils\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="src\2DUtils\Animation\Animation.cpp">
+      <Filter>Source Files\2D Utils\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\2DUtils\TextureImporter\TextureImporter.cpp">
+      <Filter>Source Files\2D Utils\TextureImporter</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\BaseClasses\Engine.h">
+      <Filter>Source Files\Base Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BaseClasses\Input.h">
+      <Filter>Source Files\Base Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BaseClasses\Window.h">
+      <Filter>Source Files\Base Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BaseClasses\CollisionManager.h">
+      <Filter>Source Files\Base Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BaseClasses\Renderer.h">
+      <Filter>Source Files\Base Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entity\Entity.h">
+      <Filter>Source Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entity\Entity2D\Entity2D.h">
+      <Filter>Source Files\Entity\Entity2D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entity\Entity2D\TileMap\TileMap.h">
+      <Filter>Source Files\Entity\Entity2D\TileMap</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entity\Entity2D\Shape\Shape.h">
+      <Filter>Source Files\Entity\Entity2D\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entity\Entity2D\Sprite\Sprite.h">
+      <Filter>Source Files\Entity\Entity2D\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="src\2DUtils\Material\Material.h">
+      <Filter>Source Files\2D Utils\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="src\2DUtils\Animation\Animation.h">
+      <Filter>Source Files\2D Utils\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\2DUtils\TextureImporter\TextureImporter.h">
+      <Filter>Source Files\2D Utils\TextureImporter</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
